@@ -1,0 +1,71 @@
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY4NDE2Mjg2fQ.2STN_3wVZi6j9lPKI9o9sSg9Ys8rMpypLZRww6XqJzQ
+
+###
+GET http://localhost:3000/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY4NDE2Mjg2fQ.2STN_3wVZi6j9lPKI9o9sSg9Ys8rMpypLZRww6XqJzQ
+
+
+###
+GET http://localhost:3000/states/8/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY4NDE2Mjg2fQ.2STN_3wVZi6j9lPKI9o9sSg9Ys8rMpypLZRww6XqJzQ
+
+
+### 
+GET http://localhost:3000/districts/322/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY4NDE2Mjg2fQ.2STN_3wVZi6j9lPKI9o9sSg9Ys8rMpypLZRww6XqJzQ
+
+
+###
+GET http://localhost:3000/states/5/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY4NDE2Mjg2fQ.2STN_3wVZi6j9lPKI9o9sSg9Ys8rMpypLZRww6XqJzQ
+
+
+###
+GET http://localhost:3000/districts/145/details
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY4NDE2Mjg2fQ.2STN_3wVZi6j9lPKI9o9sSg9Ys8rMpypLZRww6XqJzQ
+
+
+###
+POST http://localhost:3000/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY4NDE2Mjg2fQ.2STN_3wVZi6j9lPKI9o9sSg9Ys8rMpypLZRww6XqJzQ
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+DELETE http://localhost:3000/districts/766/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY4NDE2Mjg2fQ.2STN_3wVZi6j9lPKI9o9sSg9Ys8rMpypLZRww6XqJzQ
+
+
+###
+PUT http://localhost:3000/districts/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjY4NDE2Mjg2fQ.2STN_3wVZi6j9lPKI9o9sSg9Ys8rMpypLZRww6XqJzQ
+Content-Type: application/json
+
+{
+  "districtName": "Nicobars",
+  "stateId": 1,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
